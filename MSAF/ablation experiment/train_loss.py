@@ -403,7 +403,7 @@ def main():
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--max_epochs", type=int, default=200)
-    parser.add_argument("--patience", type=int, default=10)
+    parser.add_argument("--patience", type=int, default=20)
     parser.add_argument("--stop_metric", type=str, default="both",
                         choices=["throughput", "latency", "both", "combined"],
                         help="Metric to use for early stopping")
