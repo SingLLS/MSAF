@@ -379,10 +379,10 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", default="./data/HFBTP.csv")
-    parser.add_argument("--batch_size", type=int, default=64)
+    parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--max_epochs", type=int, default=200)
-    parser.add_argument("--patience", type=int, default=25)
+    parser.add_argument("--patience", type=int, default=20)
     parser.add_argument("--dropout", type=float, default=0.1)
     parser.add_argument("--stop_metric", type=str, default="both",
                         choices=["throughput", "latency", "both"],
